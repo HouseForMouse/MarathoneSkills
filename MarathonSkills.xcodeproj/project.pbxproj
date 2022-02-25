@@ -9,17 +9,19 @@
 /* Begin PBXBuildFile section */
 		3FF5017827C8D2EC005D1141 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF5017727C8D2EC005D1141 /* AppDelegate.swift */; };
 		3FF5017A27C8D2EC005D1141 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF5017927C8D2EC005D1141 /* SceneDelegate.swift */; };
-		3FF5017C27C8D2EC005D1141 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF5017B27C8D2EC005D1141 /* ViewController.swift */; };
+		3FF5017C27C8D2EC005D1141 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF5017B27C8D2EC005D1141 /* SignInViewController.swift */; };
 		3FF5017F27C8D2EC005D1141 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FF5017D27C8D2EC005D1141 /* Main.storyboard */; };
 		3FF5018127C8D2ED005D1141 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FF5018027C8D2ED005D1141 /* Assets.xcassets */; };
 		3FF5018427C8D2ED005D1141 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FF5018227C8D2ED005D1141 /* LaunchScreen.storyboard */; };
+		3FF5018D27C8D3FA005D1141 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 3FF5018C27C8D3FA005D1141 /* Alamofire */; };
+		3FF5019027C8D438005D1141 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 3FF5018F27C8D438005D1141 /* SwiftyJSON */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3FF5017427C8D2EC005D1141 /* MarathonSkills.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarathonSkills.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FF5017727C8D2EC005D1141 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FF5017927C8D2EC005D1141 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3FF5017B27C8D2EC005D1141 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3FF5017B27C8D2EC005D1141 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		3FF5017E27C8D2EC005D1141 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3FF5018027C8D2ED005D1141 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FF5018327C8D2ED005D1141 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -31,6 +33,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FF5019027C8D438005D1141 /* SwiftyJSON in Frameworks */,
+				3FF5018D27C8D3FA005D1141 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,7 +62,7 @@
 			children = (
 				3FF5017727C8D2EC005D1141 /* AppDelegate.swift */,
 				3FF5017927C8D2EC005D1141 /* SceneDelegate.swift */,
-				3FF5017B27C8D2EC005D1141 /* ViewController.swift */,
+				3FF5017B27C8D2EC005D1141 /* SignInViewController.swift */,
 				3FF5017D27C8D2EC005D1141 /* Main.storyboard */,
 				3FF5018027C8D2ED005D1141 /* Assets.xcassets */,
 				3FF5018227C8D2ED005D1141 /* LaunchScreen.storyboard */,
@@ -83,6 +87,10 @@
 			dependencies = (
 			);
 			name = MarathonSkills;
+			packageProductDependencies = (
+				3FF5018C27C8D3FA005D1141 /* Alamofire */,
+				3FF5018F27C8D438005D1141 /* SwiftyJSON */,
+			);
 			productName = MarathonSkills;
 			productReference = 3FF5017427C8D2EC005D1141 /* MarathonSkills.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,10 @@
 				Base,
 			);
 			mainGroup = 3FF5016B27C8D2EC005D1141;
+			packageReferences = (
+				3FF5018B27C8D3FA005D1141 /* XCRemoteSwiftPackageReference "alamofire" */,
+				3FF5018E27C8D438005D1141 /* XCRemoteSwiftPackageReference "swiftyJSON" */,
+			);
 			productRefGroup = 3FF5017527C8D2EC005D1141 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,7 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FF5017C27C8D2EC005D1141 /* ViewController.swift in Sources */,
+				3FF5017C27C8D2EC005D1141 /* SignInViewController.swift in Sources */,
 				3FF5017827C8D2EC005D1141 /* AppDelegate.swift in Sources */,
 				3FF5017A27C8D2EC005D1141 /* SceneDelegate.swift in Sources */,
 			);
@@ -217,7 +229,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -272,7 +284,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -305,7 +317,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -332,7 +344,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -358,6 +370,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3FF5018B27C8D3FA005D1141 /* XCRemoteSwiftPackageReference "alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alamofire/alamofire";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		3FF5018E27C8D438005D1141 /* XCRemoteSwiftPackageReference "swiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/swiftyJSON/swiftyJSON";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3FF5018C27C8D3FA005D1141 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3FF5018B27C8D3FA005D1141 /* XCRemoteSwiftPackageReference "alamofire" */;
+			productName = Alamofire;
+		};
+		3FF5018F27C8D438005D1141 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3FF5018E27C8D438005D1141 /* XCRemoteSwiftPackageReference "swiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3FF5016C27C8D2EC005D1141 /* Project object */;
 }
